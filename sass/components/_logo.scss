@@ -1,0 +1,24 @@
+.logo {
+  display: block;
+
+  text-decoration: none;
+  // font-family: $logo-font;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  @include font($logo-font, 700, 24px, 1.17, null);
+
+  @media screen and (min-width: 1200px) {
+    @include font($logo-font, 700, 26px, 1.19, null);
+  }
+
+  color: $accent-color;
+}
+
+.header__logo {
+  color: $logo-black-color;
+}
+
+.footer__logo {
+  color: $primary-bg-color;
+}

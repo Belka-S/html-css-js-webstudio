@@ -1,0 +1,51 @@
+.feature__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $item-gap;
+
+  list-style: none;
+}
+
+.feature__item {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - $item-gap) / 2);
+    text-align: left;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * $item-gap) / 4);
+  }
+}
+
+.feature__wrapper {
+  height: 120px;
+  margin-bottom: $item-gap;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  background-color: $secondary-bg-color;
+}
+
+.feature__issue {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.feature__description {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: $secondary-text-color;
+}

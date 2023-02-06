@@ -1,0 +1,28 @@
+@mixin font($family, $weight, $size, $height, $spacing) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin titel {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: $primary-bg-color;
+}
+
+@mixin out {
+  outline: solid 1px red;
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}

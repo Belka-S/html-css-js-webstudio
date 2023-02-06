@@ -1,0 +1,106 @@
+// Основні кнопки сайту
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  // font-family: inherit;
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+  @include font(inherit, 700, 16px, 1.88, 0.06em);
+
+  border: transparent;
+  border-radius: 4px;
+  color: $primary-bg-color;
+  background-color: $accent-color;
+
+  transition: background-color 250ms $timing-futction, box-shadow 250ms $timing-futction;
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: $primary-bg-color;
+  }
+}
+
+.hero__button {
+  min-width: 200px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+  }
+}
+
+.subscription__button,
+.modal__button {
+  min-width: 200px;
+  margin: 0 auto;
+}
+
+// Кнопка в Шапці для мобільного меню
+
+.menu-button {
+  margin-left: auto;
+  padding: 0;
+  display: inline-flex;
+
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &--close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.menu-button__icon {
+  fill: $logo-black-color;
+  transition: fill 250ms $timing-futction;
+
+  .menu-button:focus & {
+    fill: $accent-color;
+  }
+}
+
+// Кнопка закриття Молального вікна
+
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $primary-bg-color;
+}
+
+.modal__close-icon {
+  fill: $logo-black-color;
+  transition: fill 250ms $timing-futction;
+
+  .modal__close-button:hover & {
+    fill: $accent-color;
+  }
+}
