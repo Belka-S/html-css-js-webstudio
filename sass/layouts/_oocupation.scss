@@ -4,6 +4,9 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
+  & img {
+    cursor: pointer;
+  }
 }
 
 .occupation__titel {

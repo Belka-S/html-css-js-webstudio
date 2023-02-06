@@ -117,7 +117,7 @@
         </ul>
         <ul class="portfolio__set">
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="web" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-1-desk-1x.jpg 1x,
@@ -140,7 +140,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="design" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-2-desk-1x.jpg 1x,
@@ -161,7 +161,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="addon" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-3-desk-1x.jpg 1x,
@@ -182,7 +182,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="marketing" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-4-desk-1x.jpg 1x,
@@ -203,7 +203,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="addon" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-5-desk-1x.jpg 1x,
@@ -224,7 +224,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="web" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-6-desk-1x.jpg 1x,
@@ -245,7 +245,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="design" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-7-desk-1x.jpg 1x,
@@ -266,7 +266,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="marketing" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-8-desk-1x.jpg 1x,
@@ -287,7 +287,7 @@
             </a>
           </li>
           <li class="portfolio__item">
-            <a class="portfolio__link" href="#">
+            <a class="portfolio__link" data-filter="addon" href="#">
               <div class="portfilio__img-wrap">
                 <picture>
                   <source srcset="./images/portfolio-9-desk-1x.jpg 1x,
@@ -372,7 +372,7 @@
         <p class="subscription__titel">Підпишіться на розсилку</p>
         <form class="subscription__form js-speaker-form">
           <label class="subscription__label">
-            <input class="subscription_input" type="email" name="email" placeholder="E-mail" autocomplete="off">
+            <input class="subscription__input" type="email" name="email" placeholder="E-mail" autocomplete="off">
           </label>
           <button class="button subscription__button" type="submit">Підписатися
             <svg class="button__icon" width="24" height="24">
@@ -384,7 +384,9 @@
     </div>
   </footer>
   <!-- Відкриття мобільного меню -->
-  <script src="./js/menu.js"></script>
+  <script src="./js/mob-menu.js" type="module"></script>
+  <!-- Фільтр -->
+  <script src="./js/filter.js" type="module"></script>
 </body>
 
 </html>

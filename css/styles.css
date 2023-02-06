@@ -732,7 +732,7 @@ body {
   display: flex;
 }
 
-.subscription_input {
+.subscription__input {
   margin-right: 12px;
   padding: 14px 16px;
   min-width: 358px;
@@ -749,7 +749,7 @@ body {
   transition: border-color 250ms var(--timing-futction);
 }
 
-.subscription_input:focus {
+.subscription__input:focus {
   border-color: var(--accent-color);
   color: var(--primary-bg-color);
 }
