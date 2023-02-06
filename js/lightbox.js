@@ -12,6 +12,7 @@ const onClick = e => {
   instance.show();
 
   const onEsc = e => {
+    removeEventListener('keydown', onEsc);
     if (e.code !== 'Escape') {
       return;
     }
